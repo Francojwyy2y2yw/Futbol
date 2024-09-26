@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmisiones de TV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 20px;
+            color: #ffffff;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .channel-container {
+            margin: 10px;
+            border: 2px solid #ffdd57;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .channel-container:hover {
+            transform: scale(1.05);
+        }
+        .channel-image {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .description {
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .coming-soon {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffdd57;
+            color: #333;
+            font-size: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #ffffff;
+        }
+        .footer-links {
+            margin-top: 10px;
+        }
+        .footer-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ffdd57;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .channel-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transmisiones de TV</h1>
+    <div class="container">
+        <div class="channel-container">
+            <a href="espn.html" target="_blank">
+                <img src="https://static.wikia.nocookie.net/telepedia-es/images/9/99/ESPN_logo.png/revision/latest?cb=20210826204726&path-prefix=es" alt="ESPN" class="channel-image">
+            </a>
+            <div class="description">ESPN - Transmisiones deportivas en vivo y análisis.</div>
+        </div>
+       
+        <div class="channel-container">
+            <a href="TNT SPORT.html" target="_blank">
+                <img src="https://www.prensario.net/Multimedios/imgs/50254_750.PNG?v=3" alt="TNT Sports" class="channel-image">
+            </a>
+            <div class="description">TNT Sports - Fútbol y deportes en vivo.</div>
+        </div>
+    </div>
+    <div class="coming-soon">¡Más próximamente!</div>
+    <footer>
+        &copy; 2024 Transmisiones de TV. Todos los derechos reservados.
+        <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
+        </div>
+    </footer>
+
+</body>
+</html>
